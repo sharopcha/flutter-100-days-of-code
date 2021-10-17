@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_100_days/pages/day_1_card_flip.dart';
+import 'package:get/get.dart';
 import 'components/custom_button.dart';
 
 class Dashboard extends StatelessWidget {
@@ -17,7 +19,9 @@ class Dashboard extends StatelessWidget {
         child: Column(
           children: [
             GestureDetector(
-              onTap: () {},
+              onTap: () {
+                Get.to(() => CardFlip());
+              },
               child: CustomButton(
                 width: _width,
                 text: 'Day 1',
